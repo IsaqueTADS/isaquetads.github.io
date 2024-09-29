@@ -16,7 +16,11 @@ img {
 a {
   text-decoration: none;
 }
-
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
 p,
 h1,
 h2,
@@ -25,10 +29,15 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+}
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -37,17 +46,28 @@ p {
 }
 
 .menu a {
+  display: block;
   background: #ffffff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  border: 2px solid #fff;
+}
+.menu a:hover {
+  /* background: #747474; */
+  border: 2px solid #e21;
+  border-radius: 4px;
 }
 
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
+}
+
+.conteudo img {
+  grid-column: 2;
 }
 
 .introducao {
@@ -60,37 +80,43 @@ p {
   align-content: center;
   justify-items: end;
 }
-
-.detalhe {
+.introducao::before{
+  content:"" ;
   width: 60px;
   height: 4px;
-  background-color: #e21;
-  /* display: inline-block; */
+  background: #e21;
   position: absolute;
   top: 30px;
   right: -30px;
 }
-.vermais {
-  background: #e21;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
-  /* display: inline-block; */
-  text-transform: uppercase;
+.introducao h1 {
+  font-size: 2rem;
 }
 
-.subititulo {
-  font-size: 64px;
-  margin-top: 80px;
+.botao {
+  background: #e21;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+.botao:hover {
+  border: 2 px solid #900;
+}
+
+.subtitulo {
+  font-size: 4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
   padding: 40px;
-  align-self: center; /* falo com item dentro do grid */
+  align-self: center;
+  background-image: url(./img/onda.svg);
+  background-repeat: repeat;
 }
 
 .vantagens {
-  /* margin-top: 20px; */
   background: #fff;
   padding: 40px;
 }
@@ -99,14 +125,31 @@ p {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
-  /* margin-bottom: 40px; */
   padding: 20px;
+  border-left: 4px solid transparent;
 }
+.vantagens-item:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.vantagens-item:hover {
+  border-color:  #e21;
+}
+/* .vantagens-itens p:nth-child(odd){
+  background-color: green;
+} */
 .vantagens-item p {
   grid-column: 2;
 }
+.vantagens-item h3 {
+  grid-column: 2;
+}
+.vantagens-item img {
+  grid-column: 1;
+  /* align-items: center; */
+}
 
-.footer {
+.rodape {
   background: #fff;
   width: 100%;
   text-align: center;
