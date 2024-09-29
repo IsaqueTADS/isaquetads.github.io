@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="pagina2/icon/favicon.ico" type="image/x-icon">
-    <title>Login</title>
-    <link rel="stylesheet" href="sitek1/style.css" />
-  </head>
-  <body>
-    <div id="main-login"> 
-      <div id="left-login">
-        <h1>
-          Faça login <br />
-          Para acessar o nosso site!
-        </h1>
-        <img id="left-login-img" src="sitek1/Chat bot-cuate.svg" alt="robo de bem vindo">
-        
-      </div>
-      <div id="right-login">
-        <div id="card-login">
-          <h1>LOGIN</h1>
-          <div class="textfield">
-            <label for="usuario"> Usuário</label>
-            <input id="user" type="text" name="usuario" placeholder="Usuário" onclick="reloadpag()" />
-          </div>
-          <div class="textfield">
-            <label for="senha">Senha</label>
-            <input id="pass" type="password" name="senha" placeholder="Senha" onclick="reloadpag()"  />
-          </div>
-          <button id="btn-login" onclick="login()">Login</button>
-          <div id="res"></div>
-      
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<img src="./img/bikcraft.svg" alt="">
+
+<body>
+  <div class="menu">
+    <a href="#">Sobre</a>
+    <a href="#">Produtos</a>
+    <a href="#">Lojas</a>
+    <a href="#">Contatos</a>
+  </div>
+
+  <div class="conteudo">
+    <div class="introducao">
+      <span class="detalhe"></span>
+      <h1>Bicicletas Feitas a Mão</h1>
+      <p>A Nimbus Stark é a Melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da
+        marca</p>
+      <a class="vermais" href="#">Ver Mais</a>
     </div>
-    <script src="sitek1/script.js"></script>
-  </body>
+
+    <img src="./img/bicicleta.jpg" alt="bicicleta-preta">
+
+    <h2 class="subititulo">Vantagens Bikecraft</h2>
+
+    <div class="vantagens">
+
+      <div class="vantagens-item">
+        <img src="./img/eletrica.svg" alt="">
+        <h3>Motor Elétrico</h3>
+        <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+      </div>
+      <div class="vantagens-item">
+        <img src="./img/velocidade.svg" alt="">
+        <h3>40 km/h</h3>
+        <p>A mais rápida bicicleta elétrica disponivel hoje no mercado.</p>
+      </div>
+      <div class="vantagens-item">
+        <img src="./img/rastreador.svg" alt="">
+        <h3>Rastreador</h3>
+        <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">&copy IsaqueTADS 2024 </footer>
+
+</body>
+
 </html>
