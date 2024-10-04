@@ -92,6 +92,10 @@ p {
 .introducao h1 {
   font-size: 2rem;
 }
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
 
 .botao {
   background: #e21;
@@ -114,6 +118,7 @@ p {
   align-self: center;
   background-image: url(./img/onda.svg);
   background-repeat: repeat;
+  /* word-break: break-all; */
 }
 
 .vantagens {
@@ -155,4 +160,48 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+/* breakpoints pontos de quebra */
+
+@media (max-width: 1000px) {
+  .conteudo-vantagens {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .introducao::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin-top: 25px;
+    /* margin-left: 0px; */
+    gap: 32px;
+  }
+  .header {
+    gap: 30px;
+  }
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao-cover {
+    grid-row: 1;
+  }
+  .introducao {
+    justify-items: start;
+    text-align: start;
+  }
+
+  .introducao a {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .introducao p {
+    max-width: 50ch;
+  }
 }
