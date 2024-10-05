@@ -204,4 +204,7 @@ p {
   .introducao p {
     max-width: 50ch;
   }
+  .subtitulo {
+    font-size: 2rem;
+  }
 }
