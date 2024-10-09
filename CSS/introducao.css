@@ -54,6 +54,7 @@
 @media (max-width: 470px) {
   .introducao {
     justify-content: center;
+    grid-template-columns: 1fr;
   }
   .introducao h1 {
     font-size: 2rem;
