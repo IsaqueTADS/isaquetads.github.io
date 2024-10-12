@@ -24,7 +24,11 @@
   left: 20px;
 }
 
-.formacao .subtitulo {
+.subtitulof {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
   color: #000000;
   max-width: 5ch;
 }
@@ -139,9 +143,14 @@
     padding: 60px 20px;
     gap: 40px;
   }
-  .formacao .subtitulo {
+
+  .subtitulof {
     color: #ffffff;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
   }
+
   .formacao-texto {
     font-size: 1.25rem;
   }
