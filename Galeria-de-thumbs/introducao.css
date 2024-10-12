@@ -4,9 +4,10 @@
   margin-right: auto;
   padding: 40px 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr ;
   gap: 100px;
   align-items: center;
+  justify-items: center;
 }
 
 .introducao h1 {
@@ -39,7 +40,7 @@
 }
 @media (max-width: 700px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
   }
   .introducao h1 {
