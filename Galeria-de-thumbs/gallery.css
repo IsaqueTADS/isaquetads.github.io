@@ -1,4 +1,7 @@
-.gallery {
+.gallery{
+  background-color: #141414;
+}
+.gallery-img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

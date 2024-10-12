@@ -5,8 +5,7 @@
   padding: 40px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
-  align-items: center;
+  gap: 100px;  align-items: center;
 }
 .introducao h1 {
   font-size: 4.5rem;
