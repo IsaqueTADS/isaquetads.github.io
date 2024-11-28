@@ -1,0 +1,69 @@
+.introducaog {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 100px;
+  align-items: center;
+  justify-items: center;
+}
+
+.introducaog h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+.introducaog h1:before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 100px;
+  background: url("/My-website-portifolio/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.introducaog p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 900px) {
+  .introducaog h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .introducaog {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .introducaog h1 {
+    font-size: 2rem;
+  }
+  .introducaog h1::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+@media (max-width: 470px) {
+  .introducaog {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+  .introducaog h1 {
+    font-size: 2rem;
+  }
+  .introducaog img {
+    grid-row: 1;
+  }
+  .introducaog div {
+    grid-row: 2;
+  }
+}
