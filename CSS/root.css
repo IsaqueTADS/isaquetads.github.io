@@ -1,0 +1,23 @@
+:root {
+  --text-color: #232e35;
+  --fundo-links-a: #f5f5f5;
+  --cor-detalhe-verde: #a0e6c7;
+  --fundo-principal: #ffffff;
+  --borda-button-nav: #f1f1f1;
+  --fundo-secundario: #f3f0f0;
+  --sombra-card-link: rgba(0, 0, 0, 0.05);
+  --sombra-card: rgba(0, 0, 0, 0.1);
+  --sombra-card-secundario: rgba(0, 0, 0, 0.08);
+}
+
+.modScreen {
+  --fundo-secundario: #191919;
+  --text-color: #f5f5f5;
+  --fundo-links-a: #2c3e50;
+  --cor-detalhe-verde: #4a7c56;
+  --fundo-principal: #1c1c1c;
+  --borda-button-nav: #3e3e3e;
+  --sombra-card-link: rgba(255, 255, 255, 0.05);
+  --sombra-card: rgba(255, 255, 255, 0.1);
+  --sombra-card-secundario: rgba(255, 255, 255, 0.08)
+}

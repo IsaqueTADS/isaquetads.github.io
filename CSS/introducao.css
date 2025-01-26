@@ -1,66 +1,86 @@
 .introducao {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
   padding: 40px 20px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.introducao-descricao {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;  align-items: center;
-}
-.introducao h1 {
-  font-size: 4.5rem;
-  line-height: 1.125;
-  margin-bottom: 30px;
-  position: relative;
-}
-.introducao h1:before {
-  content: "";
-  display: block;
-  width: 140px;
-  height: 100px;
-  background: url("../img/detalhe.svg") no-repeat center;
-  position: absolute;
-  top: -15px;
-  left: -40px;
-  z-index: -1;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  p {
+    font-size: 1.33rem;
+    font-weight: 400;
+  }
 }
 
-.introducao p {
-  font-size: 1.5rem;
-  color: #525252;
+.introducao-titulo {
+  font-family: Plus Jakarta Sans, Arial;
+  font-weight: bold;
+  font-size: 3.4rem;
 }
 
-@media (max-width: 900px) {
-  .introducao h1 {
-    font-size: 3rem;
-  }
+.introducao-titulo span {
+  color: var(--cor-detalhe-verde);
 }
-@media (max-width: 700px) {
-  .introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .introducao h1 {
+
+.introducao-descricao ul {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1051px) {
+  .introducao-titulo {
     font-size: 2rem;
   }
-  .introducao h1::before {
-    width: 30px;
-    height: 10px;
-    left: 0px;
+  .introducao-descricao ul {
+    gap: 20px;
   }
-}
-@media (max-width: 470px) {
-  .introducao {
-    justify-content: center;
-    grid-template-columns: 1fr;
-  }
-  .introducao h1 {
-    font-size: 2rem;
+
+  .introducao-descricao p {
+    font-size: 1rem;
   }
   .introducao img {
-    grid-row: 1;
+    display: block;
+    max-width: 400px;
   }
-  .introducao div {
-    grid-row: 2;
+}
+
+@media (max-width: 635px) {
+  .introducao {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .introducao img {
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .introducao img {
+    align-self: center;
+    max-width: 300px;
+  }
+}
+@media (max-width: 260px) {
+  .introducao img {
+    align-self: center;
+    max-width: 250px;
+  }
+}
+@media (max-width: 190px) {
+  .introducao img {
+    align-self: center;
+    max-width: 190px;
   }
 }

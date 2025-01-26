@@ -1,8 +1,7 @@
 @import "./global.css";
 @import "./header.css";
+@import "./root.css";
 @import "./introducao.css";
-@import "./experiencia.css";
-@import "./formacao.css";
 @import "./footer.css";
-@import "./introducao_gallery.css";
-@import "./gallery.css";
+@import "./meusProjetos.css";
+@import "../assets/fonts/fonts.css";
