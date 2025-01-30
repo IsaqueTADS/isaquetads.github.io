@@ -70,6 +70,11 @@
   .introducao img {
     align-self: center;
     max-width: 300px;
+    
+  }
+  .introducao {
+    margin-top: 10px;
+    padding: 0px 20px 20px 20px;
   }
 }
 @media (max-width: 260px) {
